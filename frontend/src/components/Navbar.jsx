@@ -13,9 +13,12 @@ const Navbar = () => {
 
   // Close mobile menu on route change
   useEffect(() => {
-    setMobileMenuOpen(false);
-    setActiveDropdown(null);
-  }, [location]);
+    const closeMenus = () => {
+      setMobileMenuOpen(false);
+      setActiveDropdown(null);
+    };
+    closeMenus();
+  }, [location.pathname]);
 
   // Handle scroll
   useEffect(() => {

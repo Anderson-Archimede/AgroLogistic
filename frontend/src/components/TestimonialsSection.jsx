@@ -21,9 +21,15 @@ const TestimonialsSection = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 6000);
+    const interval = setInterval(() => {
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+        setTimeout(() => setIsAnimating(false), 500);
+      }
+    }, 6000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isAnimating]);
 
   const currentTestimonial = testimonials[currentIndex];
 
