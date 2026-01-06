@@ -69,41 +69,43 @@ const NotFoundPage = () => {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Layout>
-        <Routes>
-          {/* Home */}
-          <Route path="/" element={<HomePage />} />
-          
-          {/* Services */}
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:slug" element={<ServiceDetailPage />} />
-          <Route path="/services/category/:categorySlug" element={<ServicesPage />} />
-          
-          {/* Industries */}
-          <Route path="/industries" element={<IndustriesPage />} />
-          <Route path="/industries/:slug" element={<IndustryDetailPage />} />
-          
-          {/* Case Studies */}
-          <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
-          
-          {/* Technologies */}
-          <Route path="/technologies" element={<TechnologiesPage />} />
-          <Route path="/technologies/:slug" element={<TechnologiesPage />} />
-          
-          {/* Blog */}
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
-          
-          {/* Contact */}
-          <Route path="/contact" element={<ContactPage />} />
-          
-          {/* 404 */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Layout>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            {/* Home */}
+            <Route path="/" element={<HomePage />} />
+            
+            {/* Services */}
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:slug" element={<ServiceDetailPage />} />
+            <Route path="/services/category/:categorySlug" element={<ServicesPage />} />
+            
+            {/* Industries */}
+            <Route path="/industries" element={<IndustriesPage />} />
+            <Route path="/industries/:slug" element={<IndustryDetailPage />} />
+            
+            {/* Case Studies */}
+            <Route path="/case-studies" element={<CaseStudiesPage />} />
+            <Route path="/case-studies/:slug" element={<CaseStudyDetailPage />} />
+            
+            {/* Technologies */}
+            <Route path="/technologies" element={<TechnologiesPage />} />
+            <Route path="/technologies/:slug" element={<TechnologiesPage />} />
+            
+            {/* Blog */}
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            
+            {/* Contact */}
+            <Route path="/contact" element={<ContactPage />} />
+            
+            {/* 404 */}
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 
