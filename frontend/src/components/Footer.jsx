@@ -18,7 +18,7 @@ const Footer = () => {
                 Ready to start your project?
               </h2>
               <p className="text-gray-400">
-                Let's discuss how we can help your business grow.
+                Let&apos;s discuss how we can help your business grow.
               </p>
             </div>
             <Link
