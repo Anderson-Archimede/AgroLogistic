@@ -118,7 +118,7 @@ const ContactPage = () => {
               Let's talk about your project
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Ready to start your digital transformation? Get in touch with us and let's 
+              Ready to start your digital transformation? Get in touch with us and let&apos;s 
               discuss how we can help you achieve your goals.
             </p>
           </div>

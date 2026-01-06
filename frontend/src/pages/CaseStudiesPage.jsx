@@ -104,7 +104,7 @@ const CaseStudiesPage = () => {
               Our work speaks for itself
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Explore how we've helped businesses across industries achieve their digital goals 
+              Explore how we&apos;ve helped businesses across industries achieve their digital goals 
               with custom software solutions.
             </p>
           </div>
