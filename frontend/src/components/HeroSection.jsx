@@ -22,34 +22,23 @@ const HeroSection = () => {
           </div>
 
           {/* Right content - Rocket illustration */}
-          <div className="relative flex justify-center lg:justify-end">
-            {/* Pink cloud shapes */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <svg
-                viewBox="0 0 500 600"
-                className="w-full h-full max-w-lg"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {/* Main pink cloud */}
-                <ellipse cx="250" cy="400" rx="180" ry="150" fill="#E91E63" opacity="0.9" />
-                <ellipse cx="320" cy="350" rx="100" ry="80" fill="#E91E63" opacity="0.9" />
-                <ellipse cx="180" cy="380" rx="90" ry="70" fill="#E91E63" opacity="0.9" />
-                
-                {/* Stars */}
-                <polygon
-                  points="420,150 430,175 455,175 435,192 443,217 420,200 397,217 405,192 385,175 410,175"
-                  fill="#E91E63"
-                />
-                <polygon
-                  points="450,280 457,297 475,297 461,308 466,325 450,315 434,325 439,308 425,297 443,297"
-                  fill="#E91E63"
-                  transform="scale(0.7) translate(200, 100)"
-                />
-                <polygon
-                  points="480,350 485,362 498,362 488,370 491,383 480,375 469,383 472,370 462,362 475,362"
-                  fill="#E91E63"
-                  transform="scale(0.5) translate(300, 200)"
-                />
+          <div className="relative flex justify-center lg:justify-end min-h-[500px]">
+            {/* Pink decorative elements */}
+            <div className="absolute right-0 top-1/2 -translate-y-1/2">
+              {/* Large pink blob */}
+              <div className="absolute right-10 bottom-0 w-72 h-72 bg-[#E91E63] rounded-full opacity-90" style={{filter: 'blur(0px)'}}></div>
+              <div className="absolute right-32 bottom-16 w-48 h-48 bg-[#E91E63] rounded-full opacity-90"></div>
+              <div className="absolute right-0 bottom-20 w-40 h-40 bg-[#E91E63] rounded-full opacity-90"></div>
+              
+              {/* 4-pointed stars */}
+              <svg className="absolute right-[-20px] top-10 w-16 h-16 text-[#E91E63]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+              </svg>
+              <svg className="absolute right-[-60px] top-40 w-12 h-12 text-[#E91E63]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
+              </svg>
+              <svg className="absolute right-[-30px] top-72 w-8 h-8 text-[#E91E63]" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z"/>
               </svg>
             </div>
 
