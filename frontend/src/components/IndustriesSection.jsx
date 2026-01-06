@@ -3,22 +3,29 @@ import { industries } from '../data/mock';
 import { ArrowRight } from 'lucide-react';
 
 const IndustriesSection = () => {
+  // Different background colors for each industry
+  const bgColors = [
+    'from-pink-50 to-pink-100', // AI - pinkish
+    'from-cyan-50 to-cyan-100', // E-commerce - cyan/turquoise  
+    'from-purple-50 to-purple-100', // EdTech - purple
+  ];
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {industries.map((industry, index) => (
           <div
             key={industry.id}
-            className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center mb-24 last:mb-0`}
+            className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 lg:gap-16 items-center mb-32 last:mb-0`}
           >
             {/* Image */}
             <div className="flex-1 w-full">
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-100 to-pink-50 rounded-3xl transform group-hover:scale-105 transition-transform duration-500" />
+                <div className={`absolute inset-0 bg-gradient-to-br ${bgColors[index]} rounded-3xl transform group-hover:scale-105 transition-transform duration-500`} />
                 <img
                   src={industry.image}
                   alt={industry.title}
-                  className="relative z-10 w-full max-w-lg mx-auto h-auto rounded-2xl transform group-hover:-translate-y-2 transition-transform duration-500"
+                  className="relative z-10 w-full max-w-lg mx-auto h-auto transform group-hover:-translate-y-2 transition-transform duration-500"
                 />
               </div>
             </div>
@@ -36,7 +43,7 @@ const IndustriesSection = () => {
                   <a
                     key={linkIndex}
                     href={link.url}
-                    className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+                    className={`inline-flex items-center gap-2 px-6 py-3.5 rounded-lg font-medium transition-all duration-300 ${
                       linkIndex === 0
                         ? 'bg-[#d4e157] hover:bg-[#c6d246] text-gray-900 hover:shadow-lg hover:-translate-y-0.5'
                         : 'border-2 border-gray-200 text-gray-700 hover:border-pink-500 hover:text-pink-600'
