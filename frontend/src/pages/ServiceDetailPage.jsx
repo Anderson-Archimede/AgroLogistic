@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { ArrowLeft, Clock, ArrowRight, Check } from 'lucide-react';
-import { services, servicesCategories, getServiceBySlug } from '../../data/services';
-import ServiceProcess from '../../components/services/ServiceProcess';
-import ServiceCard from '../../components/services/ServiceCard';
+import { services, servicesCategories, getServiceBySlug } from '../data/services';
+import ServiceProcess from '../components/services/ServiceProcess';
+import ServiceCard from '../components/services/ServiceCard';
 
 const ServiceDetailPage = () => {
   const { slug } = useParams();
