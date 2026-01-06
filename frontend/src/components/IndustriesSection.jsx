@@ -5,9 +5,9 @@ import { ArrowRight } from 'lucide-react';
 const IndustriesSection = () => {
   // Different background colors for each industry
   const bgColors = [
-    'from-pink-50 to-pink-100', // AI - pinkish
-    'from-cyan-50 to-cyan-100', // E-commerce - cyan/turquoise  
-    'from-purple-50 to-purple-100', // EdTech - purple
+    'from-[#f0f7a3] to-[#e8f59d]', // AI - yellowish/lime
+    'from-cyan-100 to-cyan-200', // E-commerce - cyan/turquoise  
+    'from-purple-100 to-purple-200', // EdTech - purple
   ];
 
   return (
