@@ -18,7 +18,7 @@ const BlogSection = () => {
           <p className="text-gray-600 text-lg">
             We enjoy sharing expert knowledge about innovations, best practices, and trends
             in AI and technology, business process automation, and IT project execution.
-            We also create the podcast "WM Talks", where we discuss the possibilities and
+            We also create the podcast &quot;WM Talks&quot;, where we discuss the possibilities and
             practical applications of modern technologies in business.
           </p>
         </div>

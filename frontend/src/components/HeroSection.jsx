@@ -11,7 +11,7 @@ const HeroSection = () => {
               Your software company that accelerates delivery and drives sales
             </h1>
             <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-              For over 10 years, we've been helping e-commerce, EdTech, and AI companies
+              For over 10 years, we&apos;ve been helping e-commerce, EdTech, and AI companies
               build scalable software solutions. We combine fast implementation with high
               code quality - empowering you to grow your business and gain a competitive
               edge.

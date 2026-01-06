@@ -17,7 +17,7 @@ const PortfolioSection = () => {
               Portfolio
             </h2>
             <p className="text-gray-600 text-lg">
-              See how we've helped our clients grow and scale.
+              See how we&apos;ve helped our clients grow and scale.
             </p>
           </div>
           
@@ -33,7 +33,7 @@ const PortfolioSection = () => {
               alt="Space station"
               className="w-24 h-24 mb-4"
             />
-            <p className="text-white text-lg mb-4">Let's talk about your project</p>
+            <p className="text-white text-lg mb-4">Let&apos;s talk about your project</p>
             <Link 
               to="/contact"
               className="inline-block bg-transparent border-2 border-white text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-white hover:text-gray-900 transition-all duration-300"
