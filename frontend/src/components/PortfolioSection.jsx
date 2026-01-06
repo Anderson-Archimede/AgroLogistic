@@ -7,7 +7,7 @@ const PortfolioSection = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-8 mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-serif italic text-gray-900 mb-4">
               Portfolio
@@ -53,14 +53,14 @@ const PortfolioSection = () => {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <img
-                    src={study.logo}
-                    alt={`${study.name} logo`}
-                    className="h-8 w-auto"
-                  />
                   <h3 className="text-xl font-semibold text-gray-900">
                     {study.name}
                   </h3>
+                  <img
+                    src={study.logo}
+                    alt={`${study.name} logo`}
+                    className="h-6 w-auto ml-auto"
+                  />
                 </div>
                 <p className="text-gray-600 mb-4 line-clamp-2">
                   {study.description}
